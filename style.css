@@ -1,0 +1,186 @@
+body {
+  background-color: #132235;
+  font-size: 30px;
+}
+
+header {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 220px;
+}
+
+nav {
+  position: absolute;
+  top: 55px;
+  right: 0px;
+}
+
+nav li {
+  display: inline;
+  margin: 0 0 0 20px;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: #6ddad3;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #6ddad3;
+  text-decoration: underline;
+}
+
+.institucional {
+  color: #132235;
+  background-color: #6ddad3;
+  padding: 2.5em 0;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 28px;
+}
+
+.institucional p {
+  margin: 1em 5em 0 5em;
+}
+
+.produtos {
+  width: 100%;
+  margin: 0 auto;
+  padding: 45px 0;
+  background-color: #ffffff;
+  color: #132235;
+  text-align: center;
+}
+
+.produtos li {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 5px;
+}
+
+.produtos li:hover {
+  border-color: #6ddad3;
+}
+
+.produto_descricao {
+  font-size: 18px;
+}
+
+.produto_preco {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px 0 0;
+}
+
+.moradia1 {
+  height: 175px;
+}
+
+.moradia2 {
+  height: 235px;
+}
+
+.contato {
+  color: #6ddad3;
+  display: grid;
+  justify-content: center;
+}
+
+.input_padrao {
+  display: block;
+  margin: auto;
+  width: 350px;
+  font-size: 20px;
+}
+
+.enviar {
+  background-color: #132235;
+  color: #6ddad3;
+  border: 2px solid #6ddad3;
+  border-radius: 5px;
+  width: 30%;
+  padding: 5px 15px;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #6ddad3;
+  color: #132235;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+  line-height: 1.5;
+}
+
+footer img {
+  height: 4vw;
+}
+
+@media screen and (max-width: 480px) {
+  header .institucional .produto .contato {
+    width: auto;
+  }
+
+  h1 {
+    text-align: center;
+    width: 45%;
+  }
+
+  nav {
+    position: static;
+  }
+
+  nav li {
+    display: flex;
+  }
+
+  .institucional p {
+    margin: 1.5rem;
+  }
+
+  .produtos li {
+    display: block;
+    width: 85%;
+    vertical-align: top;
+    margin: 2%;
+    padding: 100px 50px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .moradia1 {
+    height: 130px;
+  }
+
+  .moradia2 {
+    height: 140px;
+  }
+
+  .input_padrao {
+    max-width: 300px;
+  }
+
+  footer img {
+    height: 7vw;
+  }
+}
